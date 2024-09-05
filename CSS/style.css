@@ -1,18 +1,21 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden;
+}
+.home-page{
+    width: 100vw;
+    height: 660px;
+    background-color: black;
 }
 
-.home-page {
-    width: 100vw;
-    min-height: 100vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-}
+
+/* *****NAV BAR Styling START*************************************************************************************************************** */
 .nav{
-    height: 150px;
+    height: 140px;
     width: 100vw;
     border: 1px solid white;
     display: flex;
@@ -28,7 +31,7 @@
     border: 1px solid white;
 }
 .some-info{
-    height: 55%;
+    height: 35%;
     width: 100%;
     border-bottom: 20px groove rgb(255, 225, 0);
     display: flex;
@@ -58,27 +61,312 @@
 .social-media{
     display: flex;
     align-items: end;
-    gap: 16px;
+    gap: 14px;
 }
-.social-media span{
-    padding: 6px;
-    border-radius: 50%;
+.social-media div{
     border: 2px solid white;
-    transition: 0.3s ease;
-}
-.social-media span:hover{
-    background-color: white;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: 0.5s ease;
 }
-.social-media span:hover i{
+.social-media a{
+    text-decoration: none;
+}
+.social-media div i{
+    font-size: 21px;
+    color: white;
+}
+.social-media div:hover{
+    background-color: white;
+}
+.social-media div:hover i{
     color: black !important;
-    scale: 1.7;
-} 
-.social-media span i{
-    scale: 1.4;
-    width: 18px;
-    margin: 2px 0px 0px 3.6px ;
 }
-.nav-bar{
-    height: 45%;
+.nav-bar {
+    display: flex;
+    height: 45%; 
+    width: 100%;
 }
+.pages{
+    width: 60%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.pages ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    gap: 40px; 
+}
+.pages a{
+    text-decoration: none;
+}
+.pages li {
+    color: white;
+    cursor: pointer;
+    font-size: 18px; 
+}
+.pages li:hover {
+    text-decoration: underline; 
+    text-decoration-color: yellow;
+}
+.pages li:active{
+    scale: .9;
+    color: yellow;
+}
+.mob-no{
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    display: flex;
+}
+.number i{
+    font-size: 45px;
+    margin-right: 7px;
+}
+.for-booking :nth-child(1){
+    font-size: larger;
+    color: yellow;
+}
+
+/* *****NAV BAR Styling END*************************************************************************************************************** */
+
+
+
+
+
+/* *****Home Page Styling START*************************************************************************************************************** */
+
+.home {
+    position: relative;
+    height: 450px;
+    width: 95vw;
+    background-image: url(../Images/home-page-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 10px 10px;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+}
+
+.home-details {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    /* z-index: 10; */
+}
+
+.line1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+.line1 :nth-child(1){
+    color: rgb(251, 255, 32);
+}
+.line1 p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+}
+.experience{
+    display: flex;
+}
+.experience span{
+    color: yellow;
+}
+.experience :nth-child(2){
+    width: 30%;
+    font-size: 42px;
+    font-weight: bolder;
+    color: white;
+    /* text-align: center; */
+    padding-top: 25px;
+}
+.indias-no1{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.indias-no1 :nth-child(1){
+    border-right-width: 7px;
+    border-right-style: solid;
+    border-image: linear-gradient(
+        to bottom,
+        #FF9933 25%, /* Saffron */
+        rgba(255, 255, 255, 0.8) 50%, /* White blend with Saffron */
+        #FFFFFF 45%, /* White */
+        rgba(255, 255, 255, 0.8) 50%, /* White blend with Green */
+        #138808 75% /* Green */
+    ) 1;
+    /* color: white; */
+    background: linear-gradient(to bottom, #FF9933, #FFFFFF, Green); /* Saffron to White */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+}
+.indias-no1 :nth-child(2){
+    color: yellow;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+.contact{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.contact-section{
+    width: 410px;
+    height: 370px;
+    background-color: rgba(190, 190, 190, 0.5);
+    border-radius: 40px;
+}
+.contact-page{
+    height: 85%;
+    width: 85%;
+    margin: 10px 0px 18px 28px;
+}
+.cont-hea{
+    font-size: 27px;
+    color: yellow;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.main-contact-part{
+    display: flex;
+    margin-top: 8px;
+}
+.icon-label{
+    margin-top: 5px;
+}
+.icon-label div{
+    margin-top: 4px;
+}
+.icon-label i{
+    font-size: 33px;
+}
+.icon-label label{
+    font-size: 18px;
+    color: white;
+}
+.input-feild{
+    margin-top: 10px;
+}
+.input-feild div{
+    margin-top: 8px;
+}
+.input-feild input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    height: 30px;
+    width: 220px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+    margin-top: 25px;
+}
+.button button {
+    padding: 8px 5px;
+    font-size: larger;
+    font-weight: bold;
+    /* background-color: rgb(214, 214, 103); */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background: linear-gradient(rgb(200, 173, 53), rgb(200, 173, 53)) padding-box, 
+                linear-gradient(to right, #FF9933, #FFFFFF, #138808) border-box;
+    border: 4px solid transparent; /* Transparent border to show the gradient */
+    cursor: pointer;
+    transition: .1s ease;
+}
+.button button:active{
+    scale: .96;
+}
+/* *****Home Page Styling END*************************************************************************************************************** */
+
+
+
+/* *****Our Expertise section Styling START*************************************************************************************************************** */
+
+.our-expertise-section{
+    width: 100%;
+    height: 530px;
+    padding-top: 15px;
+    border: 1px solid red;
+    background-color: black;
+}
+.heading{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    color: yellow;
+}
+.heading span{
+    color: white;
+}
+.heading-p{
+    padding-top: 5px;
+    text-align: center;
+    color: yellow;
+    font-size: larger;
+}
+.expertise-section{
+    width: 100%;
+    height: 450px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.expertise{
+    height: 400px;
+    width: 97%;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+/* *****Our Expertise section Styling END*************************************************************************************************************** */
+
+
