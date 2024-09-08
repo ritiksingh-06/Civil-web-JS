@@ -141,8 +141,56 @@ body{
 
 
 
-@media (max-width: 1024px) {
-    
+@media (max-width: 430px) {
+    .nav{
+        height: 90px !important;
+    }
+    .some-info > :nth-child(1){
+        display: block !important;
+    }
+    .some-info{
+        height: 40% !important;
+    }
+    .gmail, .location{
+        font-size: 13px !important;
+    }
+    .gmail span i, .location span i{
+        font-size: 12px !important;
+        color: white;
+    }
+    .social-media{
+        gap: 7px !important;
+    }
+    .social-media div{
+        width: 22px !important;
+        height: 22px !important;
+    }
+    .social-media div i{
+        font-size: 16px !important;
+    }
+    .nav-bar {
+        height: 35% !important; 
+    }
+    .pages ul {
+        gap: 7px !important; 
+    }
+    .pages li {
+        font-size: 15px !important; 
+    }
+    .mob-no{
+        width: 35% !important;
+        justify-content: end;
+    }
+    .number i{
+        font-size: 19px !important;
+        margin-right: 3px !important;
+    }
+    .for-booking :nth-child(1){
+        font-size: 8px !important;
+    }
+    .for-booking :nth-child(2){
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -152,8 +200,6 @@ body{
     .some-info{
         height: 35%;
         border-bottom: 15px groove rgb(255, 225, 0);
-        /* display: block !important; */
-        
     }
     .gmail, .location{
         font-size: 13px;
@@ -256,7 +302,7 @@ body{
 .line2{
     font-size: 30px;
     text-align: center;
-    padding-top: 25px;
+    padding: 25px 54px 0px 54px;
     color: white;
 }
 .experience{
@@ -405,7 +451,7 @@ body{
     }
     .line2{
         font-size: 23px;
-        padding-top: 16px;
+        padding: 25px 18px 0px 18px;
     }
     .experience :nth-child(2){
         padding-top: 15px;
@@ -469,6 +515,89 @@ body{
         padding: 9px 5px;
         font-size: 13px;
     } 
+}
+
+@media (max-width: 430px) {
+    .home {
+        padding: 12px 0px 0px 0px !important;
+        display: block;
+    }
+    .home-details {
+        width: 95%;
+        margin-left: 10px;
+    }
+    .line1{
+        font-size: 27px !important;
+        font-weight: bold !important;
+    }
+    .line1 span{
+        display: none;
+    }
+    .line2{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .experience :nth-child(2){
+        width: 50%;
+        font-size: 30px;
+    }
+    .indias-no1{
+        width: 60%;
+        margin-top: -25px;
+    }
+    .indias-no1 :nth-child(1){
+        border-right-width: 5px;
+        font-size: 30px;
+    }
+    .indias-no1 :nth-child(2){
+        font-size: 17px;
+    }
+    .contact{
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+    .contact-section{
+        width: 95%;
+        height: 290px;
+        z-index: 10 !important;
+    }
+    .contact-page{
+        height: 75%;
+        width: 97%;
+        margin: 5px 0px 18px 7px;
+    }
+    .main-contact-part{
+        display: flex;
+        margin-top: -5px;
+    }
+    .icon-label{
+        margin-top: 15px;
+    }
+    .icon-label div{
+        margin-top: 2px;
+    }
+    .icon-label i{
+        font-size: 28px;
+    }
+    .input-feild{
+        margin-top: 15px;
+    }
+    .input-feild div{
+        margin-top: 8px;
+    }
+    .input-feild input{
+        border-bottom: 1px solid white;
+        height: 25px;
+        width: 270px;
+    }
+    .button{
+        margin-top: 23px;
+    }
+    .button button {
+        padding: 8px 5px;
+        font-size: 15px;
+        border: 2px solid transparent; /* Transparent border to show the gradient */
+    }
 }
 /* *****Home Page Styling END*************************************************************************************************************** */
 
@@ -606,6 +735,64 @@ body{
     }
 }
 
+@media (max-width: 430px){
+    .our-expertise-section{
+        width: 100%;
+        height: auto;
+        background-color: rgb(88, 88, 88);
+    }
+    .heading, .heading1{
+        padding-top: 5px;
+        font-size: 25px;
+    }
+    .heading-p, .heading-p1{
+        padding: 0px 0px 10px 17px;
+        font-size: 15px;
+    }
+    .expertise-section{
+        width: 100%;
+        height: 170px;
+        border: 1px solid green;
+    }
+    .expertise{
+        height: 145px;
+        border: 1px solid yellow;
+    }
+    .expertise-3-img{
+        height: 90%;
+        width: 96.5%;
+        margin: 11px 0px 0px 7px;
+        display: flex;
+        gap: 0px;
+        border: 1px solid black;
+    }
+    .exp-img1, .exp-img2, .exp-img3{
+        width: 100%;
+        height: 80%;
+        z-index: 1;
+    }
+    .exp-img1 > :nth-child(1), .exp-img2 > :nth-child(1), .exp-img3 > :nth-child(1){
+        height: 100%;
+        width: 100px;
+        margin-left: 12px;
+        border: 2px solid yellow;
+        z-index: 11;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    .exp-img1 > :nth-child(2), .exp-img2 > :nth-child(2), .exp-img3 > :nth-child(2){
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+}
+
 /* *****Our Expertise section Styling END*************************************************************************************************************** */
 /* *****About 7VERTEX section Styling END*************************************************************************************************************** */
 
@@ -633,6 +820,7 @@ body{
 .heading-p1{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    padding-right: 7px !important;
 }
 .about-7vertex > :nth-child(2){
     height: auto;
@@ -717,6 +905,8 @@ body{
     font-size: large;
     border-radius: 25px;
 }
+
+
 @media (max-width: 1024px) {
     .card {
     flex: 1 1 calc(50% - 35px); /* 2 cards per row on tablet size */
@@ -736,6 +926,39 @@ body{
     }
     .card > :nth-child(2) > :nth-child(2) div{
         font-size: 16px;
+    }
+}
+
+@media (max-width: 430px) {
+    .about-7vertex{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .vertex-heading{
+        width: 95%;
+    }
+    .about-7vertex > :nth-child(2){
+        padding-top: 30px;
+    }
+    .about-cards{
+        width: 80%;
+        gap: 25px;
+    }
+    .card {
+        height: 400px;
+        flex: 1 1 100%; /* 1 card per row on mobile size */
+    }
+    .card > :nth-child(2) > :nth-child(1){
+        height: 25%;
+        font-size: 18px;
+        align-items: end;
+    }
+    .card > :nth-child(2) > :nth-child(2){
+        height: 75%;
+    }
+    .card > :nth-child(2) > :nth-child(2) div{
+        width: 85%;
+        font-size: 15px;
     }
 }
 /* *****About 7VERTEX section Styling END*************************************************************************************************************** */
@@ -785,6 +1008,32 @@ body{
         height: 65%;
         gap: 15px;
         padding: 30px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 430px){
+    .our-projects{
+        height: 575px;
+        width: 100%;
+        padding-top: 15px;
+        background-color: rgb(88, 88, 88);}
+    .our-projects > :nth-child(1){
+        display: flex;
+        justify-content: center;
+    }
+    .our-projects > :nth-child(2){    
+        display: block;
+        gap: 10px;
+        padding: 25px 0px 0px 0px;
+    }
+    .our-projects > :nth-child(2) > div{
+        border: 1px solid black;
+        width: 97%;
+        height: 60%;
+        margin-left: 7px;
+    }
+    .our-projects > :nth-child(2) > :nth-child(2){
+        margin-top: 10px;
     }
 }
 /* *****PROJECT section Styling END*************************************************************************************************************** */
@@ -876,6 +1125,43 @@ body{
     .member-card {
     flex: 1 1 100%; /* 1 card per row on mobile size */
   }
+}
+@media (max-width: 430px){
+    .our-team{
+        padding: 25px 0px 30px 0px;
+    }
+    .our-team > :nth-child(2){
+        height: 40%;
+        padding-top: 35px;
+    }
+    .team-members{
+        width: 85%;
+        gap: 25px; /* space between the cards */
+    }
+    
+    .member-card {
+        height: 350px;
+    }
+    .member-card > :nth-child(1){
+        height: 70%;
+    }
+    .member-card > :nth-child(1) div{
+        height: 210px;
+        width: 210px;
+    }
+    .member-card > :nth-child(2){
+        padding: 0px 5px 10px 5px;
+        height: 30%;
+    }
+    .member-card > :nth-child(2) > :nth-child(1){
+        height: 45%;
+        font-size: 30px;
+    }
+    .member-card > :nth-child(2) > :nth-child(2){
+        height: 35%;
+        font-size: 21px;
+        padding-top: 15px;
+    }
 }
 /* *****TEAM section Styling END*************************************************************************************************************** */
 
@@ -996,6 +1282,23 @@ body{
         margin: 170px 0px 0px 170px;
     }
 }
+
+@media (max-width: 430px){
+    .feedback-section{
+        width: 88%;
+        gap: 35px; /* space between the cards */
+    }
+    .feedback-card > :nth-child(1){
+        height: 205px;
+        width: 205px;
+        margin: 15px 0px 0px 20px;
+    }   
+    .feedback-card > :nth-child(2){
+        height: 155px;
+        width: 155px;
+        margin: 170px 0px 0px 177px;
+    }
+}
 /* *****FEEDBACK section Styling END*************************************************************************************************************** */
 
 
@@ -1085,5 +1388,39 @@ body{
         color: yellow;
         margin-top: 25px;
     }
+}
+
+@media (max-width: 430px){
+    .about-company-section{
+    width: 100%;
+    height: 410px;
+}
+.about-company{
+    width: 90%;
+    height: 380px;
+    z-index: 2;
+}
+.about-company-heading{
+    font-size: 26px;
+}
+.about-heading1{
+    font-size: 20px;
+    font-weight: 700;
+    color: yellow;
+    margin-top: 15px;
+}
+.about-para1{
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500 !important;
+    color: white;
+    font-weight: 400;
+}
+.about-heading2{
+    font-size: 20px;
+    font-weight: 700;
+    color: yellow;
+    margin-top: 10px;
+}
 }
 /* *****ABOUT COMPANY section Styling END*************************************************************************************************************** */
