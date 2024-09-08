@@ -9,10 +9,11 @@ body{
 }
 .home-page{
     width: 100vw;
-    height: 660px;
+    height: auto;
     background-color: black;
 }
 
+/* win-scp    sftpd */
 
 /* *****NAV BAR Styling START*************************************************************************************************************** */
 .nav{
@@ -136,6 +137,67 @@ body{
 .for-booking :nth-child(1){
     font-size: larger;
     color: yellow;
+}
+
+
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    .nav{
+        height: 100px;
+    }
+    .some-info{
+        height: 35%;
+        border-bottom: 15px groove rgb(255, 225, 0);
+        /* display: block !important; */
+        
+    }
+    .gmail, .location{
+        font-size: 13px;
+        width: 180px;
+    }
+    .social-media{
+        gap: 10px;
+    }
+    .social-media div{
+        width: 26px;
+        height: 26px;
+    }
+    .social-media div i{
+        font-size: 17px;
+    }
+
+    .nav-bar {
+        height: 45%; 
+    }
+    .pages{
+        width: 65%;
+    }
+    .pages ul {
+        gap: 25px; 
+    }
+    .pages li{
+        font-size: 17px;
+    }
+
+    .mob-no{
+        width: 34%;
+        margin-top: 10px;
+    }
+    .number{
+        display: flex;
+    }
+    .number i{
+        font-size: 35px;
+        margin-right: 0px;
+    }
+    .for-booking :nth-child(1){
+        font-size: 16px;
+        color: yellow;
+    }
 }
 
 /* *****NAV BAR Styling END*************************************************************************************************************** */
@@ -263,7 +325,7 @@ body{
     margin: 10px 0px 18px 28px;
 }
 .cont-hea{
-    font-size: 27px;
+    font-size: 24px;
     color: yellow;
     font-weight: bold;
     display: flex;
@@ -297,7 +359,7 @@ body{
     border: none;
     border-bottom: 2px solid white;
     height: 30px;
-    width: 220px;
+    width: 230px;
 }
 .button{
     display: flex;
@@ -321,6 +383,92 @@ body{
 }
 .button button:active{
     scale: .96;
+}
+
+
+
+@media (max-width: 768px) {
+    .home {
+        width: 95vw;
+        padding: 20px 10px 10px;
+        margin: 8px;
+    }
+    
+    .home-details {
+        position: relative;
+        width: 65%;
+        height: 100%;
+    }
+    
+    .line1{
+        font-size: 31px;
+    }
+    .line2{
+        font-size: 23px;
+        padding-top: 16px;
+    }
+    .experience :nth-child(2){
+        padding-top: 15px;
+        width: 59%;
+        font-size: 37px;
+    }
+    .indias-no1{
+        margin-top: 15px;
+        width: 70%;
+    }
+    .indias-no1 :nth-child(1){
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .indias-no1 :nth-child(2){
+        font-size: 25px;
+    }
+    .contact{
+        width: 35%;
+        height: 100%;
+    }
+    .contact-section{
+        width: 270px;
+        height: 300px;
+        background-color: rgba(190, 190, 190, 0.5);
+        border-radius: 40px;
+    }
+    .contact-page{
+        height: 70%;
+        width: 98%;
+        margin: 10px 0px 18px 5px;
+    }
+    .cont-hea{
+        font-size: 23px;
+    }
+    .icon-label{
+        margin-top: 0px;
+    }
+    .icon-label i{
+        font-size: 25px;
+    }
+    .icon-label label{
+        font-size: 15px;
+        color: white;
+    }
+    .input-feild{
+        margin-top: 0px;
+    }
+    .input-feild div{
+        margin-top: 8px;
+    }
+    .input-feild input{
+        height: 23px;
+        width: 150px;
+    }
+    .button{
+        padding: 3px 0px 0px 0px;
+        margin-top: 25px;
+    }
+    .button button {
+        padding: 9px 5px;
+        font-size: 13px;
+    } 
 }
 /* *****Home Page Styling END*************************************************************************************************************** */
 
@@ -422,6 +570,40 @@ body{
     background-image: url(../Images/expertise-img3.jpg);
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
+}
+
+@media (max-width: 768px) {
+    .our-expertise-section{
+        width: 100%;
+        height: 365px;
+        background-color: rgb(88, 88, 88);
+    }
+    .heading, .heading1{
+        padding-top: 0px;
+        font-size: 35px;
+    }
+    .heading-p, .heading-p1{
+        padding-top: 3px;
+        font-size: 15px;
+    }
+    .expertise-section{
+        width: 100%;
+        height: 300px;
+    }
+    .expertise{
+        height: 270px;
+        width: 97%;
+        border-radius: 15px;
+    }
+    .expertise-3-img{
+        height: 90%;
+        width: 96%;
+        margin: 11px 0px 0px 11px;
+        gap: 15px;
+    }
+    .exp-img1 > :nth-child(2), .exp-img2 > :nth-child(2), .exp-img3 > :nth-child(2){
+        font-size: 19px;
+    }
 }
 
 /* *****Our Expertise section Styling END*************************************************************************************************************** */
@@ -540,11 +722,21 @@ body{
     flex: 1 1 calc(50% - 35px); /* 2 cards per row on tablet size */
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     .card {
     flex: 1 1 100%; /* 1 card per row on mobile size */
   }
+}
+@media (max-width: 768px) {
+    .card{
+        height: 450px;
+    }
+    .card > :nth-child(2) > :nth-child(1){
+        font-size: 17px;
+    }
+    .card > :nth-child(2) > :nth-child(2) div{
+        font-size: 16px;
+    }
 }
 /* *****About 7VERTEX section Styling END*************************************************************************************************************** */
 
@@ -561,7 +753,8 @@ body{
     display: flex;
     justify-content: center;
 }
-.our-projects > :nth-child(2){    display: flex;
+.our-projects > :nth-child(2){    
+    display: flex;
     justify-content: center;
     height: 75%;
     gap: 20px;
@@ -582,6 +775,17 @@ body{
     background-image: url(../Images/project2.png);
     margin-top: 100px;
     /* height: auto; */
+}
+
+@media (max-width: 768px) {
+    .our-projects{
+        height: 410px;
+    }
+    .our-projects > :nth-child(2){
+        height: 65%;
+        gap: 15px;
+        padding: 30px 0px 0px 0px;
+    }
 }
 /* *****PROJECT section Styling END*************************************************************************************************************** */
 
@@ -769,8 +973,28 @@ body{
 
 @media (max-width: 768px) {
     .feedback-card {
-    flex: 1 1 100%; /* 1 card per row on mobile size */
-  }
+        flex: 1 1 calc(50% - 30px); /* 1 card per row on mobile size */
+    }
+    .feedback-card > :nth-child(1){
+        height: 185px;
+        width: 185px;
+        margin: 20px 0px 0px 25px;
+    }
+    .feedback-card > :nth-child(1) > :nth-child(1){
+        margin: 15px 0px 0px 43px;
+    }
+    .feedback-card > :nth-child(1) > :nth-child(2){
+        font-size: 10.5px;
+    }
+    .feedback-card > :nth-child(1) > h2{
+        margin: 0px 0px 0px 38px;
+        font-size: 20px;
+    }
+    .feedback-card > :nth-child(2){
+        height: 145px;
+        width: 145px;
+        margin: 170px 0px 0px 170px;
+    }
 }
 /* *****FEEDBACK section Styling END*************************************************************************************************************** */
 
@@ -805,9 +1029,11 @@ body{
 }
 .about-company-heading{
     text-align: center;
-    color: white;
     font-size: 47px;
     font-weight: 800;
+    background: linear-gradient(to right, rgb(255, 106, 0), white, green);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .about-heading1{
     font-size: 26px;
@@ -827,5 +1053,37 @@ body{
     font-weight: 700;
     color: yellow;
     margin-top: 35px;
+}
+
+
+@media (max-width: 768px) {
+    .about-company-section{
+        width: 100%;
+        height: 340px;
+    }
+    .about-company{
+        width: 82%;
+        height: 320px;
+    }
+    .about-company-heading{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .about-heading1{
+        font-size: 22px;
+        font-weight: 700;
+        color: yellow;
+        margin-top: 25px;
+    }
+    .about-para1{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .about-heading2{
+        font-size: 22px;
+        font-weight: 700;
+        color: yellow;
+        margin-top: 25px;
+    }
 }
 /* *****ABOUT COMPANY section Styling END*************************************************************************************************************** */
