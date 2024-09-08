@@ -139,8 +139,6 @@ body{
     color: yellow;
 }
 
-
-
 @media (max-width: 430px) {
     .nav{
         height: 90px !important;
@@ -243,6 +241,51 @@ body{
     .for-booking :nth-child(1){
         font-size: 16px;
         color: yellow;
+    }
+}
+@media (max-width: 420px) {
+    .gmail{
+        margin-top: 3px;
+    }
+    .gmail, .location{
+        font-size: 12px !important;
+    }
+    .gmail span i, .location span i{
+        font-size: 9px !important;
+        color: white;
+    }
+    .social-media{
+        gap: 4px !important;
+    }
+    .social-media div{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .social-media div i{
+        font-size: 16px !important;
+    }
+    .nav-bar {
+        height: 35% !important; 
+    }
+    .pages ul {
+        gap: 4px !important; 
+    }
+    .pages li {
+        font-size: 13px !important; 
+    }
+    .mob-no{
+        width: 35% !important;
+        justify-content: end;
+    }
+    .number i{
+        font-size: 16px !important;
+        margin-right: 3px !important;
+    }
+    .for-booking :nth-child(1){
+        font-size: 8px !important;
+    }
+    .for-booking :nth-child(2){
+        font-size: 11px !important;
     }
 }
 
