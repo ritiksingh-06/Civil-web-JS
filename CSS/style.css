@@ -148,6 +148,7 @@ body{
     }
     .some-info{
         height: 40% !important;
+        border-bottom: 15px groove rgb(255, 225, 0);
     }
     .gmail, .location{
         font-size: 13px !important;
@@ -254,6 +255,12 @@ body{
         font-size: 9px !important;
         color: white;
     }
+    .gmail div, .location div{
+        margin: 0px 0px 0px 7px;
+    }
+    .some-info{
+        border-bottom: 11px groove rgb(255, 225, 0);
+    }
     .social-media{
         gap: 4px !important;
     }
@@ -271,11 +278,13 @@ body{
         gap: 4px !important; 
     }
     .pages li {
-        font-size: 13px !important; 
+        font-size: 13px !important;
+        letter-spacing: -0.2px;
     }
     .mob-no{
         width: 35% !important;
         justify-content: end;
+        letter-spacing: -0.2px;
     }
     .number i{
         font-size: 16px !important;
@@ -473,6 +482,9 @@ body{
 .button button:active{
     scale: .96;
 }
+.input-feild input::placeholder{
+    display: none;
+}
 
 
 
@@ -542,6 +554,9 @@ body{
     }
     .input-feild{
         margin-top: 0px;
+    }
+    .input-feild input::placeholder{
+        display: none;
     }
     .input-feild div{
         margin-top: 8px;
@@ -625,6 +640,9 @@ body{
     .input-feild{
         margin-top: 15px;
     }
+    .input-feild input::placeholder{
+        display: none;
+    }
     .input-feild div{
         margin-top: 8px;
     }
@@ -632,6 +650,62 @@ body{
         border-bottom: 1px solid white;
         height: 25px;
         width: 270px;
+    }
+    .button{
+        margin-top: 23px;
+    }
+    .button button {
+        padding: 8px 5px;
+        font-size: 15px;
+        border: 2px solid transparent; /* Transparent border to show the gradient */
+    }
+}
+
+@media (max-width: 420px) {
+    .line1{
+        font-size: 20px !important;
+        font-weight: bold !important;
+    }
+    .line2{
+        font-size: 15px;
+        padding-top: 7px;
+    }
+    .experience :nth-child(2){
+        width: 40%;
+        font-size: 25px;
+    }
+    .indias-no1{
+        width: 50%;
+        margin-top: -20px;
+    }
+    .indias-no1 :nth-child(1){
+        font-size: 25px;
+    }
+    .indias-no1 :nth-child(2){
+        font-size: 15px;
+    }
+    .contact{
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-label {
+        display: none;
+        font-size: 28px;
+    }
+    .input-feild{
+        margin-left: 45px;
+        margin-top: 15px;
+    }
+    .input-feild div{
+        margin-top: 8px;
+    }
+    .input-feild input{
+        border-bottom: 1px solid white;
+        height: 25px;
+        width: 270px;
+    }
+    .input-feild input::placeholder{
+        color: black !important;
     }
     .button{
         margin-top: 23px;
@@ -835,6 +909,12 @@ body{
         align-items: end;
     }
 }
+@media (max-width: 420px){
+    .exp-img1 > :nth-child(2), .exp-img2 > :nth-child(2), .exp-img3 > :nth-child(2){
+        font-size: 12px;
+        letter-spacing: -0.2px;
+    }
+}
 
 /* *****Our Expertise section Styling END*************************************************************************************************************** */
 /* *****About 7VERTEX section Styling END*************************************************************************************************************** */
@@ -1001,7 +1081,8 @@ body{
     }
     .card > :nth-child(2) > :nth-child(2) div{
         width: 85%;
-        font-size: 15px;
+        font-size: 12px;
+        letter-spacing: -0.2px;
     }
 }
 /* *****About 7VERTEX section Styling END*************************************************************************************************************** */
@@ -1198,12 +1279,12 @@ body{
     }
     .member-card > :nth-child(2) > :nth-child(1){
         height: 45%;
-        font-size: 30px;
+        font-size: 25px;
     }
     .member-card > :nth-child(2) > :nth-child(2){
         height: 35%;
-        font-size: 21px;
-        padding-top: 15px;
+        font-size: 15px;
+        padding-top: 0px;
     }
 }
 /* *****TEAM section Styling END*************************************************************************************************************** */
@@ -1334,12 +1415,21 @@ body{
     .feedback-card > :nth-child(1){
         height: 205px;
         width: 205px;
-        margin: 15px 0px 0px 20px;
+        margin: 15px 0px 0px 15px;
     }   
     .feedback-card > :nth-child(2){
         height: 155px;
         width: 155px;
-        margin: 170px 0px 0px 177px;
+        margin: 170px 0px 0px 171px;
+    }
+    .feedback-card > :nth-child(1) > :nth-child(2){
+        font-size: 11px;
+        letter-spacing: -0.2px;
+    }
+    .feedback-card > :nth-child(1) > h2{
+        margin: 2px 0px 0px 30px;
+        color: rgb(0, 0, 143);
+        font-size: 14px;
     }
 }
 /* *****FEEDBACK section Styling END*************************************************************************************************************** */
@@ -1436,32 +1526,35 @@ body{
 @media (max-width: 430px){
     .about-company-section{
     width: 100%;
-    height: 410px;
+    height: 370px;
 }
 .about-company{
-    width: 90%;
-    height: 380px;
+    width: 95%;
+    height: 310px;
     z-index: 2;
 }
 .about-company-heading{
     font-size: 26px;
 }
 .about-heading1{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
+    letter-spacing: -0.3px;
     color: yellow;
     margin-top: 15px;
 }
 .about-para1{
     margin-top: 4px;
-    font-size: 15px;
+    font-size: 13px;
+    letter-spacing: -0.2px;
     font-weight: 500 !important;
     color: white;
     font-weight: 400;
 }
 .about-heading2{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
+    letter-spacing: -0.3px;
     color: yellow;
     margin-top: 10px;
 }
